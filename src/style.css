@@ -1,0 +1,365 @@
+.app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px; /* Increase max-width for a larger container */
+  margin: 80px auto; /* Adjust margin for positioning */
+  padding: 30px; /* Adjust padding for spacing inside the container */
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  /* style.css */
+/* Light Mode */
+/* style.css */
+/* Light Mode */
+.app-container {
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
+  }
+ .timezone-selector {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the search bar */
+  left: 0;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.date-picker {
+  margin-right: 0px; /* Adjust spacing */
+  align-items: right;
+}
+
+.date-picker {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 2px solid #007bff; /* Button border color */
+  border-radius: 1px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.title{
+  text-align: center;
+}
+.title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff; /* Blue color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+  
+  .slider-wrapper {
+    position: relative;
+  }
+  
+  .current-date {
+    position: absolute;
+    bottom: 40px; /* Adjust as needed */
+    right: 50px;
+    font-size: 14px; /* Adjust font size as needed */
+    color: #666; /* Adjust color as needed */
+  }
+  
+  .time-display {
+    position: relative;
+  }
+  
+  
+  
+  /* Dark Mode */
+  .app-container.dark-mode {
+    background-color: #333333; /* dark background */
+    color: #ffffff; /* white text */
+  }
+  
+  /* Dark Mode - Text Color */
+  .app-container.dark-mode .slider-header h3,
+  .app-container.dark-mode .time-display {
+    color: #ffffff; /* white text */
+  }
+  /* style.css */
+/* Light Mode */
+body {
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text */
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #333333; /* dark background */
+    color: #ffffff; /* white text */
+  }
+  
+  /* Dark Mode - Text Color */
+  body.dark-mode .slider-header h3,
+  body.dark-mode .time-display {
+    color: #ffffff; /* white text */
+  }
+  
+
+  
+  /* Add styles for dark mode */
+/* Dark mode styles */
+
+  
+  
+  .timezone-selector select {
+    
+    width: 100px;
+    padding: 15px 15px;
+    font-size: 18px;
+    border: 4px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .timezone-selector select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  .timezone-selector {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+  }
+  .container {
+    display: flex;
+    align-items: right; /* Align items vertically */
+  }
+  
+  .timezone-selector select {
+    
+    width: 75%;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .timezone-selector select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .sliders-container {
+    margin-top: 10px;
+  }
+  
+  .slider-wrapper {
+    margin-bottom: 25px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(100% - 40px); /* Reduced width to leave space for the time display */
+    height: 15px;
+    border-radius: 10px;
+    background: #e9ecef;
+    outline: none;
+    transition: background 0.3s ease-in-out;
+    margin: 0 20px; /* Add margin to give space around the slider */
+  }
+  
+  input[type="range"]:hover {
+    background: #ced4da;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    box-shadow: 0 0 4px #007bff;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+    box-shadow: 0 0 4px #007bff;
+    border: 3px solid #fff;
+  }
+  
+  input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.1);
+  }
+  
+  p.time-display {
+    background: #007bff;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Position it relative to the parent */
+    right: 10px; /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .shareable-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .shareable-link input.share {
+    width: 100%; /* Ensure the input takes up the full width */
+    max-width: 300px; /* Adjust max-width as needed */
+  }
+  
+  .remove-timezone {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    padding: 0 10px;
+  }
+  
+  .remove-timezone:hover {
+    color: #333;
+  }
+  /* style.css */
+.timezone-selector {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  /* style.css */
+/* style.css */
+
+  
+  .dark-mode button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000; /* Set text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+  }
+  
+  .dark-mode button:hover {
+    background-color: #ddd; /* Change background color on hover */
+  }
+
+  .share-button {
+    margin-bottom: 10px; /* Adjust spacing */
+    align-items: right;
+  }
+  
+  .share-button button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #007bff; /* Button border color */
+    border-radius: 5px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .share-button button:hover {
+    background-color: #0056b3; /* Hover background color */
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly; /* Align items with equal space between them */
+  }
+  
+  .share-button {
+    margin-bottom: 10px;
+  }
+  .google-meet {
+    margin-bottom: 10px; /* Adjust spacing */
+    align-items: right;
+  }
+  .slider-box {
+    border: 4px solid #4a849b; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding around the content */
+    margin-bottom: 10px; /* Spacing between boxes */
+    box-shadow: 0 2px 4px rgba(135, 20, 20, 0.1); /* Shadow for depth */
+  }
+  
+ 
+  .google-meet button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #007bff; /* Button border color */
+    border-radius: 5px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  
+  
+  
+  
+ 
+  
+
+  
